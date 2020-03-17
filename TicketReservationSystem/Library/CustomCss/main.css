@@ -1,0 +1,180 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background: #0ABDE3;*/
+}
+
+.box {
+    opacity: 1;
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #191919;
+    text-align: center;
+    border-radius: 20px;
+}
+
+    .box h1 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .box .textBoxCss {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 250px;
+        outline: none;
+        color: white;
+        border-radius: 30px;
+        transition: 0.5s;
+    }
+
+        .box .textBoxCss:focus {
+            width: 300px;
+            border-color: #2ecc71;
+        }
+
+.CustomButtom {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 10px 40px;
+    outline: none;
+    color: #2ecc71;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+    .CustomButtom:hover {
+        background: #2ecc71;
+        color: white;
+    }
+
+.LoginAncher {
+    text-decoration: none !important;
+    color: #3498db;
+    transition: .5s;
+}
+
+    .LoginAncher:hover {
+        color: #2ecc71;
+    }
+
+#exampleModalCenter {
+    background-color: lightgray transparent;
+}
+
+/*.textBoxCss {
+    display: block;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    text-align: center;
+    height: 40px;
+}
+
+    .textBoxCss:focus {
+        display: block;
+        border: 2px solid #2ecc71;
+        border-radius: 25px;
+    }*/
+
+.CustomRegisterButtom {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 8px 30px;
+    outline: none;
+    color: #2ecc71;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+    .CustomRegisterButtom:hover {
+        background: #2ecc71;
+        color: white;
+    }
+
+.modal-header {
+    background-color: #2ecc71;
+    border: 2px solid Green;
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        opacity: 1;
+        width: 300px;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #191919;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+        .box h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 200;
+            font-size: 25px;
+        }
+
+        .box input[type = "text"], .box input[type = "password"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 10px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 30px;
+            transition: 0.5s;
+        }
+
+            .box input[type = "text"]:focus, .box input[type = "password"]:focus {
+                width: 230px;
+                border-color: #2ecc71;
+            }
+
+    .CustomButtom {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+        border: 2px solid #2ecc71;
+        padding: 8px 30px;
+        outline: none;
+        color: #2ecc71;
+        border-radius: 30px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+        .CustomButtom:hover {
+            background: #2ecc71;
+            color: white;
+        }
+}

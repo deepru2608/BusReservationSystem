@@ -1,0 +1,279 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+header section#LogoSection .SmartLogo {
+  /*@media only screen and (max-width: 500px) {
+                width: 120px;
+                height: 10px;
+            }*/ }
+
+/*.navbar {
+    background: linear-gradient(to right, #74B9FF, #0A79DF);
+}*/
+#navbarLine {
+  border-bottom: 15px solid #0A79DF; }
+
+#navbarSupportedContent ul {
+  list-style: none;
+  z-index: 999;
+  font-family: 'Montserrat', sans-serif;
+  position: sticky; }
+  #navbarSupportedContent ul li {
+    text-align: center;
+    position: relative;
+    list-style-type: none; }
+    #navbarSupportedContent ul li a {
+      text-decoration: none;
+      /*color: #192A56;*/
+      color: #47535E;
+      /*padding: 10px;*/
+      display: block;
+      font-size: 16px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      /*font-weight: bold;*/
+      font-size: 18px; }
+        #navbarSupportedContent ul li a:hover {
+            color: #2ecc71;
+        }
+
+.lineSet {
+  background-color: #0A79DF;
+  width: 100%;
+  height: 5vh; }
+
+.toggle-button {
+  background-color: #0A79DF;
+  border-radius: 6px;
+  border: 1px solid;
+  /*margin-left: 40px;
+            margin-top: 40px;*/
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  /*width: 150px;
+            height: 35px;*/
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 10px; }
+  .toggle-button:hover {
+    color: #0A79DF;
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid #0A79DF; }
+
+.bgImageSetup {
+  background: url(../Images/RajivChowk.JPG) no-repeat center;
+  height: 80vh;
+  z-index: 1;
+  position: relative;
+  opacity: 0.8;
+  /*.bgImageSetup
+     {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        height: 30vh;
+        width: 400px;
+        border-radius: 10px;
+        border: 2px solid #0A79DF;
+    }*/ }
+  .bgImageSetup .jumbotron {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    width: 400px; }
+    @media only screen and (max-width: 500px) {
+      .bgImageSetup .jumbotron {
+        width: 250px; } }
+
+.SearchResultPara {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  /*color: #0A79DF;*/
+  /*color: #74B9FF;*/
+  color: #3498DB; }
+
+.GridViewClass {
+  padding: 7px;
+  color: #3498DB;
+  border: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  border-bottom: 1px solid;
+  border-top: 1px solid; }
+
+.GridviewHeader {
+  padding: 5px;
+  color: white;
+  border: none; }
+
+.ItemSize {
+  width: 20px;
+  height: 20px; }
+
+.button {
+  color: #43BE31;
+  background-color: #fff;
+  border: 1px solid #43BE31;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: central;
+  margin: 5px;
+  padding-top: 8px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 4px; }
+  .button:hover {
+    color: white;
+    background-color: #43BE31;
+    /*padding-top: 8px;*/
+    /*box-shadow: 5px 5px 8px 5px #888888;*/ }
+
+.button1 {
+  color: #FF3031;
+  background-color: #fff;
+  border: 1px solid #FF3031;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: central;
+  padding-top: 4px;
+  margin: 5px;
+  /*padding-top: 8px;*/
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 4px; }
+  .button1:hover {
+    color: white;
+    background-color: #FF3031;
+    /*box-shadow: 5px 5px 8px 5px #888888;*/ }
+
+.button2 {
+  color: #3498DB;
+  background-color: #fff;
+  border: 1px solid #3498DB;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*height: 40px;*/
+  text-align: center;
+  /*vertical-align: central;*/
+  /*margin: 5px;*/
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 4px; }
+  .button2:hover {
+    color: white;
+    background-color: #3498DB;
+    /*padding-top: 8px;*/
+    /*box-shadow: 5px 5px 8px 5px #888888;*/ }
+
+.UploadWarning {
+  font-size: 10px;
+  color: red; }
+
+@media (max-width: 1100px) {
+    .img-responsive {
+    height: 70px;
+    width: 350px; } }
+
+@media (max-width: 1050px) {
+  .img-responsive {
+    height: 80px;
+    width: 350px; } }
+
+@media (max-width: 900px) {
+  .img-responsive {
+    height: 60px;
+    width: 250px; } }
+
+@media (max-width: 400px) {
+    .SmartLogo{
+        margin-left: 250px;
+    }
+}
+
+/*Calendar Control CSS*/
+.cal_Theme1 .ajax__calendar_container {
+    background-color: #DEF1F4;
+    border: solid 1px #77D5F7;
+    width: 200px;
+}
+
+.cal_Theme1 .ajax__calendar_header {
+    background-color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.cal_Theme1 .ajax__calendar_title,
+.cal_Theme1 .ajax__calendar_next,
+.cal_Theme1 .ajax__calendar_prev {
+    color: #004080;
+    padding-top: 3px;
+}
+
+.cal_Theme1 .ajax__calendar_body {
+    background-color: #ffffff;
+    border: solid 1px #77D5F7;
+}
+
+.cal_Theme1 .ajax__calendar_dayname {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    color: #004080;
+}
+
+.cal_Theme1 .ajax__calendar_day {
+    color: #004080;
+    text-align: center;
+}
+
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_day,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_month,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_year,
+.cal_Theme1 .ajax__calendar_active {
+    color: #004080;
+    font-weight: bold;
+    background-color: #DEF1F4;
+}
+
+.cal_Theme1 .ajax__calendar_today {
+    font-weight: bold;
+}
+
+.cal_Theme1 .ajax__calendar_other,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_today,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_title {
+    color: #bbbbbb;
+}
+
+.GridViewClass {
+    padding: 7px;
+    color: #3498DB;
+    border: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+.GridviewHeader {
+    padding: 5px;
+    color: white;
+    border: none;
+}
