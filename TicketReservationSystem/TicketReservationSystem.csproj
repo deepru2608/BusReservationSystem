@@ -71,11 +71,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddBus.aspx" />
+    <Content Include="AddVendor.aspx" />
     <Content Include="AdminHome.aspx" />
     <Content Include="BookingReceipt.aspx" />
     <Content Include="BookTicket.aspx" />
     <Content Include="CancelReceipt.aspx" />
     <Content Include="CancelTicket.aspx" />
+    <Content Include="ChangePassword.aspx" />
     <Content Include="CheckAvailability.aspx" />
     <Content Include="Data\script.sql" />
     <Content Include="Library\CustomCss\GuestCss.css" />
@@ -113,6 +115,13 @@
     </Compile>
     <Compile Include="AddBus.aspx.designer.cs">
       <DependentUpon>AddBus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVendor.aspx.cs">
+      <DependentUpon>AddVendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVendor.aspx.designer.cs">
+      <DependentUpon>AddVendor.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminHome.aspx.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
@@ -155,6 +164,13 @@
     </Compile>
     <Compile Include="CancelTicket.aspx.designer.cs">
       <DependentUpon>CancelTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="CheckAvailability.aspx.cs">
       <DependentUpon>CheckAvailability.aspx</DependentUpon>

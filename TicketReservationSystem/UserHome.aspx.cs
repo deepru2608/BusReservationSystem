@@ -55,7 +55,7 @@ namespace TicketReservationSystem
                 string email = Session["LoginEmail"].ToString();
                 con.Open();
                 string query = "Select P_No, T_No, Source, Destination, JourneyDate, ReturnDate, Booking_Status, T_Amount, NoOfPassenger From BOOKING_MASTER " +
-                    "where Upper(Book_By_Id) = @loginEmail";
+                    "where Upper(User_Mapping) = @loginEmail";
                 cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("loginEmail", email.ToUpper());
                 da = new SqlDataAdapter(cmd);

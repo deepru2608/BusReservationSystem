@@ -55,7 +55,19 @@ namespace TicketReservationSystem
 
         protected void btnBack_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/UserHome.aspx");
+            string Role = Session["Role"].ToString();
+            if (Role == "User")
+            {
+                Response.Redirect("~/UserHome.aspx");
+            }
+            else if (Role == "Admin")
+            {
+                Response.Redirect("~/AdminHome.aspx");
+            }
+            else if (Role == "Vendor")
+            {
+                Response.Redirect("~/VendorHome.aspx");
+            }
         }
     }
 }

@@ -81,10 +81,10 @@ namespace TicketReservationSystem
                 Amount = int.Parse(dsBusDetails.Tables[0].Rows[0]["Bus_Price"].ToString());
             }
             ActualPayAmount = Amount * NoOfPassenger;
-            string query1 = "Insert into BOOKING_MASTER(P_No, T_No, Source, Destination, JourneyDate, ReturnDate, Time_Stamp, T_Amount, Bus_Id, NoOfPassenger, Booking_Status, Book_By_Id)" +
+            string query1 = "Insert into BOOKING_MASTER(P_No, T_No, Source, Destination, JourneyDate, ReturnDate, Time_Stamp, T_Amount, Bus_Id, NoOfPassenger, Booking_Status, Book_By_Id, User_Mapping)" +
                 "values('" + PassNo + "', '" + TicketNo + "', '" + Source + "', '" + Destination + "', " +
                 "'" + JourneyDate.ToString("dd-MMM-yyyy") + "', '" + ReturnDate.ToString("dd-MMM-yyyy") + "', GETDATE(), '" + ActualPayAmount + "', " +
-                "'" + BusId + "', '" + NoOfPassenger + "', 2, '" + Session["LoginEmail"].ToString() + "')";
+                "'" + BusId + "', '" + NoOfPassenger + "', 2, '" + Session["LoginEmail"].ToString() + "', '" + txtEmail.Text.Trim() + "')";
 
             string query2 = "Insert into CHECK_AVAILABILITY(P_No, T_No, Booking_Date, Booking_Status, Bus_Id) values('" + PassNo + "', '" + TicketNo + "', " +
                 "'" + JourneyDate.ToString("dd-MMM-yyyy") + "', 2, '" + BusId + "')";

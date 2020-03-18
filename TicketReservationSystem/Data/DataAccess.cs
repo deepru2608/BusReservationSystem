@@ -484,5 +484,23 @@ namespace TicketReservationSystem.Data
             return result;
         }
         #endregion
+
+        #region Check Old Password
+        public string CheckOldPassword(string query)
+        {
+            string Connstr = ConfigurationManager.AppSettings["Connstr"];
+            using (con = new SqlConnection(Connstr))
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                string TicketNo = string.Empty;
+                cmd = new SqlCommand(query, con);
+                string result = cmd.ExecuteScalar().ToString();
+                return result;
+            }
+        }
+        #endregion
     }
 }

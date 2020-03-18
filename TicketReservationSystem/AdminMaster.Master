@@ -63,11 +63,19 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="PessengerDetails.aspx" aria-disabled="true"><i class="fas fa-ticket-alt"></i>&nbsp;Pessenger Details</a>
+                                        <a class="nav-link" href="AddVendor.aspx" aria-disabled="true"><i class="fas fa-user-shield"></i>&nbsp;Add Vendor</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="PessengerDetails.aspx" aria-disabled="true"><i class="fas fa-users"></i>&nbsp;Pessenger Details</a>
                                     </li>
 
                                     <li class="nav-item">
                                         <a class="nav-link" href="UserList.aspx" aria-disabled="true"><i class="fas fa-people-carry"></i>&nbsp;User List</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ChangePassword.aspx" aria-disabled="true"><i class="fas fa-key"></i>&nbsp;Change Password</a>
                                     </li>
 
                                     <li class="nav-item">

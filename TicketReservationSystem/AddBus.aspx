@@ -7,7 +7,7 @@
         <div class="jumbotron-fluid">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    Add New Bus
+                    <h3><span class="text-primary border-bottom">Add New Bus</span></h3>
                 </div>
                 <div class="col-sm-4">
                     <div class="form-group">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 text-center mt-2">
+                <div class="col-sm-12 text-center mt-2 mb-3">
                     <asp:Button ID="btnAddNewBus" Text="Add New Bus" runat="server" CssClass="btn btn-sm btn-primary" OnClick="btnAddNewBus_Click" />
                 </div>
             </div>

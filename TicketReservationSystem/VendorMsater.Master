@@ -57,7 +57,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="UserHome.aspx" aria-disabled="true"><i class="fas fa-home"></i>&nbsp;Home</a>
+                                        <a class="nav-link" href="VendorHome.aspx" aria-disabled="true"><i class="fas fa-home"></i>&nbsp;Home</a>
                                     </li>
 
                                     <li class="nav-item">
@@ -65,11 +65,15 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="CheckAvailability.aspx" aria-disabled="true"><i class="fas fa-ticket-alt"></i>&nbsp;Check Availability</a>
+                                        <a class="nav-link" href="CheckAvailability.aspx" aria-disabled="true"><i class="fab fa-font-awesome-flag"></i>&nbsp;Check Availability</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="CancelTicket.aspx" aria-disabled="true"><i class="fas fa-ticket-alt"></i>&nbsp;Cancel</a>
+                                        <a class="nav-link" href="CancelTicket.aspx" aria-disabled="true"><i class="fas fa-window-close"></i>&nbsp;Cancel</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ChangePassword.aspx" aria-disabled="true"><i class="fas fa-key"></i>&nbsp;Change Password</a>
                                     </li>
                                     
                                     <li class="nav-item">
