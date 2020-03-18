@@ -50,12 +50,13 @@ namespace TicketReservationSystem
                 lblMobile.Text = ds.Tables[0].Rows[0]["P_Mobile"].ToString();
                 lblGender.Text = ds.Tables[0].Rows[0]["Gender"].ToString();
                 lblAmount.Text = ds.Tables[0].Rows[0]["T_Amount"].ToString();
+                lblDateTime.Text = DateTime.Now.ToString();
             }
         }
 
         protected void btnBack_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/UserHome.aspx");
+            Response.Redirect("~/VendorHome.aspx");
         }
     }
 }

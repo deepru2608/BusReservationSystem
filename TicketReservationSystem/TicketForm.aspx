@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserMsater.Master" AutoEventWireup="true" CodeBehind="TicketForm.aspx.cs" Inherits="TicketReservationSystem.TicketForm" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/VendorMsater.Master" AutoEventWireup="true" CodeBehind="TicketForm.aspx.cs" Inherits="TicketReservationSystem.TicketForm" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -78,7 +78,17 @@
                         </asp:RequiredFieldValidator>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <asp:TextBox ID="txtEmail" runat="server" oncopy="return false" onpaste="return false" oncut="return false"
+                            required="" class="form-control form-control-sm"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RFVEmail" runat="server" ControlToValidate="txtEmail"
+                            ErrorMessage="This field is required" SetFocusOnError="true" ForeColor="Red" Display="Dynamic">
+                        </asp:RequiredFieldValidator>
+                    </div>
+                </div>
+                <div class="col-sm-4">
                     <div class="form-group">
                         <label>Address</label>
                         <asp:TextBox ID="txtPAddress" runat="server" oncopy="return false" onpaste="return false" oncut="return false"

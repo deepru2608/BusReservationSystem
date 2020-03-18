@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserMsater.Master" AutoEventWireup="true" CodeBehind="CheckAvailability.aspx.cs" Inherits="TicketReservationSystem.CheckAvailability" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/VendorMsater.Master" AutoEventWireup="true" CodeBehind="CheckAvailability.aspx.cs" Inherits="TicketReservationSystem.CheckAvailability" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="Ajax" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

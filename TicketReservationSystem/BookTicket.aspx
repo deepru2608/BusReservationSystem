@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserMsater.Master" AutoEventWireup="true" CodeBehind="BookTicket.aspx.cs" Inherits="TicketReservationSystem.BookTicket" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/VendorMsater.Master" AutoEventWireup="true" CodeBehind="BookTicket.aspx.cs" Inherits="TicketReservationSystem.BookTicket" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="Ajax" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -81,7 +81,7 @@
                     <div class="form-group">
                         <label for="txtJourneyDate">Journey Date</label>
                         <asp:TextBox ID="txtJourneyDate" runat="server" oncopy="return false" onpaste="return false" oncut="return false" PlaceHolder="MM/DD/YYYY"
-                            required="" class="form-control form-control-sm"></asp:TextBox>
+                            required="" class="form-control form-control-sm" AutoCompleteType="Disabled"></asp:TextBox>
                         <Ajax:CalendarExtender ID="CalJourneyDate" runat="server" CssClass="cal_Theme1" FirstDayOfWeek="Default" Format="dd-MMM-yyyy" PopupPosition="TopRight"
                             TargetControlID="txtJourneyDate"></Ajax:CalendarExtender>
                         <asp:RequiredFieldValidator ID="RFVJourneyDate" runat="server" ControlToValidate="txtJourneyDate"
@@ -93,7 +93,7 @@
                     <div class="form-group">
                         <label for="txtReturnDate">Return Date</label>
                         <asp:TextBox ID="txtReturnDate" runat="server" oncopy="return false" onpaste="return false" oncut="return false" PlaceHolder="MM/DD/YYYY"
-                            required="" class="form-control form-control-sm"></asp:TextBox>
+                            required="" class="form-control form-control-sm" AutoCompleteType="Disabled"></asp:TextBox>
                         <Ajax:CalendarExtender ID="CalReturnDate" runat="server" CssClass="cal_Theme1" FirstDayOfWeek="Default" Format="dd-MMM-yyyy" PopupPosition="TopRight"
                             TargetControlID="txtReturnDate"></Ajax:CalendarExtender>
                     </div>

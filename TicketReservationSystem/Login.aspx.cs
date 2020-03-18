@@ -70,6 +70,10 @@ namespace TicketReservationSystem
                     {
                         Response.Redirect("~/AdminHome.aspx");
                     }
+                    else if (Role == "Vendor")
+                    {
+                        Response.Redirect("~/VendorHome.aspx");
+                    }
                 }
                 else
                 {
@@ -78,16 +82,16 @@ namespace TicketReservationSystem
             }
         }
 
-        protected async void btnRegister_Click(object sender, EventArgs e)
+        protected void btnRegister_Click(object sender, EventArgs e)
         {
-            int Count = await dataAccess.CheckEmailDb(txtEmail.Text.Trim());
-            int Count1 = await dataAccess.CheckPhoneDb(txtPhone.Text.Trim());
+            int Count = dataAccess.CheckEmailDb(txtEmail.Text.Trim());
+            int Count1 = dataAccess.CheckPhoneDb(txtPhone.Text.Trim());
             if (Count == 0 && Count1 == 0)
             {
                 try
                 {
                     string EncryptPassword = txtPasswordReg.Text;
-                    int result = await dataAccess.RegisterUser(txtName.Text.Trim(), txtEmail.Text.Trim(), txtPhone.Text.Trim(), rbtnGender.SelectedItem.Text, EncryptPassword);
+                    int result = dataAccess.RegisterUser(txtName.Text.Trim(), txtEmail.Text.Trim(), txtPhone.Text.Trim(), rbtnGender.SelectedItem.Text, EncryptPassword, "User");
                     if (result > 0)
                     {
                         dataAccess.MessageBox(Page, "You have successfully registered with us, Please go to the login page");

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserMsater.Master" AutoEventWireup="true" CodeBehind="CancelTicket.aspx.cs" Inherits="TicketReservationSystem.CancelTicket" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/VendorMsater.Master" AutoEventWireup="true" CodeBehind="CancelTicket.aspx.cs" Inherits="TicketReservationSystem.CancelTicket" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

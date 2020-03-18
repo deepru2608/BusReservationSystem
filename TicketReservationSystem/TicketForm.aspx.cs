@@ -109,6 +109,10 @@ namespace TicketReservationSystem
                 "'" + ReturnDate.ToString("dd-MMM-yyyy") + "', GETDATE())";
 
             result = dataAccess.Insert_Booking_Table(query1, query2, query4, query5);
+
+            string CommonPassword = "Booking@123";
+            string Role = "User";
+            int resultUser = dataAccess.RegisterUser(txtPName.Text.Trim(), txtEmail.Text.Trim(), txtPMobile.Text.Trim(), ddlGender.SelectedValue, CommonPassword, Role);
             if (result > 0)
             {
                 Response.Redirect(string.Format("~/BookingReceipt.aspx?pNo={0}&tNo={1}", PassNo, TicketNo));

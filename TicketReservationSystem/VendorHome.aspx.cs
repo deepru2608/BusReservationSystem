@@ -11,11 +11,16 @@ using System.Web.UI.WebControls;
 
 namespace TicketReservationSystem
 {
-    public partial class UserHome1 : System.Web.UI.Page
+    public partial class UserHome : System.Web.UI.Page
     {
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter da;
+
+        protected void Page_PreInit(object sender, EventArgs e)
+        {
+
+        }
 
         protected void Page_Load(object sender, EventArgs e)
         {

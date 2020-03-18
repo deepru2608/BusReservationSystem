@@ -77,6 +77,7 @@
     <Content Include="CancelReceipt.aspx" />
     <Content Include="CancelTicket.aspx" />
     <Content Include="CheckAvailability.aspx" />
+    <Content Include="Data\script.sql" />
     <Content Include="Library\CustomCss\GuestCss.css" />
     <Content Include="Library\CustomCss\main.css" />
     <Content Include="Library\CustomCss\MasterPageCSS.css" />
@@ -101,6 +102,7 @@
     <Content Include="PessengerDetails.aspx" />
     <Content Include="TicketForm.aspx" />
     <Content Include="UserHome.aspx" />
+    <Content Include="VendorHome.aspx" />
     <Content Include="UserList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -192,6 +194,20 @@
     <Compile Include="UserHome.aspx.designer.cs">
       <DependentUpon>UserHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserMaster.Master.cs">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserMaster.Master.designer.cs">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VendorHome.aspx.cs">
+      <DependentUpon>VendorHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VendorHome.aspx.designer.cs">
+      <DependentUpon>VendorHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserList.aspx.cs">
       <DependentUpon>UserList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -199,12 +215,12 @@
     <Compile Include="UserList.aspx.designer.cs">
       <DependentUpon>UserList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserMsater.Master.cs">
-      <DependentUpon>UserMsater.Master</DependentUpon>
+    <Compile Include="VendorMsater.Master.cs">
+      <DependentUpon>VendorMsater.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserMsater.Master.designer.cs">
-      <DependentUpon>UserMsater.Master</DependentUpon>
+    <Compile Include="VendorMsater.Master.designer.cs">
+      <DependentUpon>VendorMsater.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -223,7 +239,8 @@
     <Content Include="Library\jquery\jquery.slim.min.map" />
     <Content Include="AdminMaster.Master" />
     <None Include="packages.config" />
-    <Content Include="UserMsater.Master" />
+    <Content Include="VendorMsater.Master" />
+    <Content Include="UserMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -20,7 +20,7 @@ namespace TicketReservationSystem.Data
         SqlCommand cmd;
         SqlDataAdapter da;
 
-        public async Task<int> RegisterUser(string Name, string Email, string Mobile, string Gender, string PassWord)
+        public int RegisterUser(string Name, string Email, string Mobile, string Gender, string PassWord, string Role)
         {
             string Connstr = ConfigurationManager.AppSettings["Connstr"];
             SqlTransaction transaction = null;
@@ -43,7 +43,8 @@ namespace TicketReservationSystem.Data
                     cmd.Parameters.AddWithValue("@Mobile", Mobile);
                     cmd.Parameters.AddWithValue("@Password", PassWord);
                     cmd.Parameters.AddWithValue("@Gender", Gender);
-                    result = await cmd.ExecuteNonQueryAsync();
+                    cmd.Parameters.AddWithValue("@Role", Role);
+                    result = cmd.ExecuteNonQuery();
                     transaction.Commit();
                 }
                 catch (Exception oraExp)
@@ -65,7 +66,7 @@ namespace TicketReservationSystem.Data
         }
 
         #region Check Email Existance
-        public async Task<int> CheckEmailDb(string Email)
+        public int CheckEmailDb(string Email)
         {
             string Connstr = ConfigurationManager.AppSettings["Connstr"];
             using (con = new SqlConnection(Connstr))
@@ -75,14 +76,14 @@ namespace TicketReservationSystem.Data
                     con.Open();
                 }
                 cmd = new SqlCommand($"Select IsNull(count(Email), 0)as Email from REGISTER_DETAILS where Email = '{Email}'", con);
-                var Temp = await cmd.ExecuteScalarAsync();
+                var Temp = cmd.ExecuteScalar();
                 return Convert.ToInt32(Temp);
             }
         }
         #endregion
 
         #region Check Phone Existance
-        public async Task<int> CheckPhoneDb(string Phone)
+        public int CheckPhoneDb(string Phone)
         {
             string Connstr = ConfigurationManager.AppSettings["Connstr"];
             using (con = new SqlConnection(Connstr))
@@ -92,7 +93,7 @@ namespace TicketReservationSystem.Data
                     con.Open();
                 }
                 cmd = new SqlCommand($"Select IsNull(count(Phone), 0)as Mobile from REGISTER_DETAILS where Phone = '{Phone}'", con);
-                var Temp = await cmd.ExecuteScalarAsync();
+                var Temp = cmd.ExecuteScalar();
                 return Convert.ToInt32(Temp);
             }
         }
