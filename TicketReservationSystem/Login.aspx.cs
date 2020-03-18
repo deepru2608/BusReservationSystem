@@ -27,7 +27,7 @@ namespace TicketReservationSystem
 
         }
 
-        protected async void btnLogin_Click(object sender, EventArgs e)
+        protected void btnLogin_Click(object sender, EventArgs e)
         {
             string Connstr = ConfigurationManager.AppSettings["Connstr"];
 
@@ -47,20 +47,29 @@ namespace TicketReservationSystem
                 {
                     con.Open();
                 }
-                SqlDataReader rdr = await cmd.ExecuteReaderAsync();
+                da = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
                 string email = string.Empty;
                 string Role = string.Empty;
-                while (await rdr.ReadAsync())
+                if (ds.Tables[0].Rows.Count > 0)
                 {
-                    Role = rdr["USER_ROLE"].ToString();
-                    email = rdr["Login_Id"].ToString();
+                    Role = ds.Tables[0].Rows[0]["User_Role"].ToString();
+                    email = ds.Tables[0].Rows[0]["Login_Id"].ToString();
                 }
 
                 Session["LoginEmail"] = email;
                 Session["Role"] = Role;
                 if (!string.IsNullOrEmpty(email))
                 {
-                    Response.Redirect(Page.ResolveUrl("~/Index.aspx?role=" + Session["Role"].ToString()));
+                    if (Role == "User")
+                    {
+                        Response.Redirect("~/UserHome.aspx");
+                    }
+                    else if (Role == "Admin")
+                    {
+                        Response.Redirect("~/AdminHome.aspx");
+                    }
                 }
                 else
                 {

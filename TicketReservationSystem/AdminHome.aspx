@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UserMsater.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="TicketReservationSystem.Index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMaster.Master" AutoEventWireup="true" CodeBehind="AdminHome.aspx.cs" Inherits="TicketReservationSystem.AdminHome" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
-    <div class="container mt-1">
+    <div class="container m-5">
         <div class="jumbotron-fluid">
             <div class="row">
                 <div class="col-sm-12 text-center">

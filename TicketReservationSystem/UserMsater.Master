@@ -36,12 +36,9 @@
             <div class="container-fluid">
                 <section id="LogoSection">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand float-left" href="../GuestUser/GuestHome.aspx?Home=User">
-                            <img src="../wwwroot/Image/DTCLogo.png" alt="Logo" class="img-fluid SmartLogo" style="width: 300px; height: 150px; margin: -30px; margin-top: -50px" />
+                        <a class="navbar-brand float-left" href="UserHome.aspx">
+                            Bus Ticket Reservation System
                         </a>
-                        <div class="ml-auto">
-                            <img src="../wwwroot/Image/glasses.png" alt="Glasses" style="height: 60px" class="img-fluid d-none d-sm-none d-md-block">
-                        </div>
                     </nav>
                 </section>
             </div>
@@ -60,7 +57,23 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="../GuestUser/GuestHome.aspx?Home=User" aria-disabled="true"><i class="fas fa-home"></i>&nbsp;Home</a>
+                                        <a class="nav-link" href="UserHome.aspx" aria-disabled="true"><i class="fas fa-home"></i>&nbsp;Home</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="BookTicket.aspx" aria-disabled="true"><i class="fas fa-ticket-alt"></i>&nbsp;Book Ticket</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="CheckAvailability.aspx" aria-disabled="true"><i class="fas fa-ticket-alt"></i>&nbsp;Check Availability</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="CancelTicket.aspx" aria-disabled="true"><i class="fas fa-ticket-alt"></i>&nbsp;Cancel</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Login.aspx" aria-disabled="true"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
                                     </li>
                                 </ul>
                             </div>
@@ -73,7 +86,7 @@
             <asp:ContentPlaceHolder ID="Body" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <footer style="background-color: #333945">
+        <footer style="background-color: #333945" class="mt-5">
             <nav class="navbar fixed">
                 <div class="container p-2">
                     <p style="color: white">Copyright 2019@ Bus Ticket Reservation System, All rights reserved.</p>

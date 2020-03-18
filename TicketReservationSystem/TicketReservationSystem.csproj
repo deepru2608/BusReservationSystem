@@ -70,8 +70,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\script.sql" />
-    <Content Include="Index.aspx" />
+    <Content Include="AddBus.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="BookingReceipt.aspx" />
+    <Content Include="BookTicket.aspx" />
+    <Content Include="CancelReceipt.aspx" />
+    <Content Include="CancelTicket.aspx" />
+    <Content Include="CheckAvailability.aspx" />
     <Content Include="Library\CustomCss\GuestCss.css" />
     <Content Include="Library\CustomCss\main.css" />
     <Content Include="Library\CustomCss\MasterPageCSS.css" />
@@ -93,9 +98,27 @@
     <Content Include="Library\twitter-bootstrap\js\bootstrap.js" />
     <Content Include="Library\twitter-bootstrap\js\bootstrap.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="PessengerDetails.aspx" />
+    <Content Include="TicketForm.aspx" />
+    <Content Include="UserHome.aspx" />
+    <Content Include="UserList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBus.aspx.cs">
+      <DependentUpon>AddBus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddBus.aspx.designer.cs">
+      <DependentUpon>AddBus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,15 +126,43 @@
     <Compile Include="AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
-    <Compile Include="Data\DataAccess.cs" />
-    <Compile Include="Data\Logger.cs" />
-    <Compile Include="Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="BookingReceipt.aspx.cs">
+      <DependentUpon>BookingReceipt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
+    <Compile Include="BookingReceipt.aspx.designer.cs">
+      <DependentUpon>BookingReceipt.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BookTicket.aspx.cs">
+      <DependentUpon>BookTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookTicket.aspx.designer.cs">
+      <DependentUpon>BookTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CancelReceipt.aspx.cs">
+      <DependentUpon>CancelReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CancelReceipt.aspx.designer.cs">
+      <DependentUpon>CancelReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CancelTicket.aspx.cs">
+      <DependentUpon>CancelTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CancelTicket.aspx.designer.cs">
+      <DependentUpon>CancelTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckAvailability.aspx.cs">
+      <DependentUpon>CheckAvailability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckAvailability.aspx.designer.cs">
+      <DependentUpon>CheckAvailability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Data\Logger.cs" />
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,7 +170,35 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PessengerDetails.aspx.cs">
+      <DependentUpon>PessengerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PessengerDetails.aspx.designer.cs">
+      <DependentUpon>PessengerDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketForm.aspx.cs">
+      <DependentUpon>TicketForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TicketForm.aspx.designer.cs">
+      <DependentUpon>TicketForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserMsater.Master.cs">
       <DependentUpon>UserMsater.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

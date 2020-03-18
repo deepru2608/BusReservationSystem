@@ -11,7 +11,7 @@ namespace TicketReservationSystem
 {
 
 
-    public partial class Index
+    public partial class AdminHome
     {
 
         /// <summary>

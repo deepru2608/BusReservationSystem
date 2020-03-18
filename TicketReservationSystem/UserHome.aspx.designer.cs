@@ -11,34 +11,25 @@ namespace TicketReservationSystem
 {
 
 
-    public partial class AdminMaster
+    public partial class UserHome
     {
 
         /// <summary>
-        /// head control.
+        /// lblName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label lblName;
 
         /// <summary>
-        /// form2 control.
+        /// TicketRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
-
-        /// <summary>
-        /// Body control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Body;
+        protected global::System.Web.UI.WebControls.Repeater TicketRepeater;
     }
 }

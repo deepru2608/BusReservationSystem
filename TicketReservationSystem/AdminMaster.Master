@@ -4,16 +4,96 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Bus Ticket Reservation System</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="Library/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Library/CustomCss/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <link href="Library/CustomCss/MasterPageCSS.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        .navbar .navbar-nav > li.dropdown:hover > a,
+        .navbar .navbar-nav > li.dropdown:hover > a:hover,
+        .navbar .navbar-nav > li.dropdown:hover > a:focus {
+            color: rgb(85, 85, 85);
+        }
+
+        li.dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+
+        .Cancel:hover {
+            color: rgb(85, 85, 85);
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form2" runat="server">
+        <header>
+            <div class="container-fluid">
+                <section id="LogoSection">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand float-left" href="AdminHome.aspx">
+                            Bus Ticket Reservation System
+                        </a>
+                    </nav>
+                </section>
+            </div>
+            <div style="background-color: #3498DB">
+                <div class="container">
+                    <section>
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="AdminHome.aspx" aria-disabled="true"><i class="fas fa-home"></i>&nbsp;Home</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="AddBus.aspx" aria-disabled="true"><i class="fas fa-ticket-alt"></i>&nbsp;Add Bus</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="PessengerDetails.aspx" aria-disabled="true"><i class="fas fa-ticket-alt"></i>&nbsp;Pessenger Details</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="UserList.aspx" aria-disabled="true"><i class="fas fa-people-carry"></i>&nbsp;User List</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Login.aspx" aria-disabled="true"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+        </header>
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <asp:ContentPlaceHolder ID="Body" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+        <footer style="background-color: #333945">
+            <nav class="navbar fixed">
+                <div class="container p-2">
+                    <p style="color: white">Copyright 2019@ Bus Ticket Reservation System, All rights reserved.</p>
+                </div>
+            </nav>
+        </footer>
     </form>
+
+    <script src="Library/jquery/jquery.min.js"></script>
+    <script src="Library/twitter-bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
